@@ -1,0 +1,16 @@
+<nav>
+  <div class="nav-wrapper pink">
+    <a href="#!" class="brand-logo">Blog</a>
+    <ul class="right hide-on-med-and-down">
+      <li><%= link_to "Home", home_path %></li>
+      <li><%= link_to "Cookbook index", cookbook_index_path %></li>
+      <li><%= link_to "New", new_cookbook_path %></li>
+
+      <% Cookbook.all.each do |cookbook| %>
+        <li><%= link_to cookbook.title, cookbook_path(cookbook.id) %></li>
+
+      <% end %>
+    </ul>
+  </div>
+</nav>
+
