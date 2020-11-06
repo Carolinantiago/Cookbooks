@@ -1,29 +1,3 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Cookbooks</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @cookbooks.each do |cookbook| %>
-      <tr>
-        <td><%= cookbook.title %></td>
-        <td><%= cookbook.content %></td>
-        <td><%= link_to 'Show', cookbook_path(cookbook.id) %></td>
-        <td><%= link_to 'Edit', edit_cookbook_path(cookbook.id) %></td>
-        <td><%= link_to 'Destroy', cookbook_path(cookbook.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Cookbook', new_cookbook_path %>
+<h1>Index</h1>
+<h2>O nome a esquerda será "Pages"</h2>
+<h2>À direite tem q ter "Serviços" fixo, e depois tem que ser possível acrescentar páginas</h2>
