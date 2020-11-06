@@ -1,13 +1,27 @@
-<%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
+<%= form_with(model: cookbook, local: true) do |form| %>
+  <% if cookbook.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cookbook.errors.count, "error") %> prohibited this cookbook from being saved:</h2>
+
+      <ul>
+        <% cookbook.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div class="actions">
     <%= form.submit %>
-  </p>
+  </div>
 <% end %>
