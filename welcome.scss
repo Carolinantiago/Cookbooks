@@ -1,0 +1,55 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+h1{
+    font-size:20px;
+    font-weight: bold;
+    font-family: calibri;
+    color: #145252;
+    text-align: left;
+}
+
+a{
+    font-size:30px;
+    font-weight: normal;
+    font-family: fantasy;
+    color: green;
+    text-align: left;
+}
+
+td > a{
+    font-size:30px;
+    font-weight: normal;
+    font-family: fantasy;
+    color: red;
+    text-align: left;
+}
+
+table{
+    font-size:15px;
+    font-weight: normal;
+    font-family: Arial;
+    color: #1e7b7b;
+    text-align: left;
+}
+
+tr{
+    font-size:15px;
+    font-weight: normal;
+    font-family: Arial;
+    color: #1e7b7b;
+    text-align: left;
+}
+
+Edit{
+    font-size:15px;
+    font-weight: normal;
+    font-family: Arial;
+    color: #1e7b7b;
+    text-align: left;
+}
+
+body{
+    background-color: #33cccc;
+}

@@ -1,0 +1,40 @@
+// Place all the styles related to the Comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+h2{
+    font-size:15px;
+    font-weight: normal;
+    font-family: Arial;
+    color: #009933;
+    text-align: left;
+}
+
+strong{
+    font-size:15px;
+    font-weight: normal;
+    font-family: Arial;
+    color: #ff9900;
+    text-align: left;
+}
+
+
+span{
+    font-size:15px;
+    font-weight: normal;
+    font-family: Arial;
+    color: red;
+    text-align: left;
+}
+
+p > span{
+    font-size:5px;
+    font-weight: normal;
+    font-family: Arial;
+    color: green;
+    text-align: left;
+}
+
+body{
+    background-color: #ffff99;
+}
